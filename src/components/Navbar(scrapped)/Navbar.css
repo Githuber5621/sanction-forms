@@ -1,0 +1,109 @@
+/* Make navbar fixed at the top with background color */
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: #0052A5 !important;  /* LCCB Blue */
+    padding: 15px 0;  /* Adjust padding for better height control */
+    position: fixed;  /* Make navbar fixed at the top */
+    top: 0;
+    width: 100%;  /* Full width of the page */
+    z-index: 999;  /* Ensure the navbar is above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    height: 90px;
+}
+
+/* Navbar brand (logo and text) aligned to the left */
+.navbar-brand {
+    margin-left: 470px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25rem;  /* Matching font size */
+    font-weight: 600;  /* Adjust font weight to match the title font */
+}
+
+/* Logo in the navbar */
+.navbar-logo {
+    width: 50px; /* Increase logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+/* Flex layout for the navbar menu items */
+.navbar-nav-center {
+    display: flex;
+    justify-content: center;  /* Center align navbar items */
+    flex-grow: 1;  /* Allow the nav items to take up remaining space */
+}
+
+/* Navbar link styling with more spacing between items */
+.navbar-nav-center .nav-link {
+    color: #fff; /* White text for nav links */
+    font-weight: 600; /* Matching font weight */
+    padding: 12px 25px;  /* Added more padding for spacing */
+    font-size: 1.1rem;  /* Increased font size for consistency */
+    text-transform: uppercase; /* Uppercase text */
+    border: none; /* Remove border */
+    background-color: transparent; /* Ensure no background */
+    margin: 0 20px; /* Added margin between each item */
+}
+
+/* Hover effect for navbar links */
+.navbar-nav-center .nav-link:hover {
+    color: #000 !important;  /* Set hover color to black */
+}
+
+/* Styling for the logout button (far right) */
+.navbar-nav-right {
+    display: flex;
+    justify-content: flex-end;  /* Align the logout button to the far right */
+}
+
+.admin-name {
+    color: #ffffff; /* Adjust color as needed */
+    margin-right: 10px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text wrapping */
+    display: inline-block; /* Ensures it stays inline */
+}
+
+/* Styling for the logout button */
+.navbar-nav-right .btn {
+    background-color: #0052A5; /* LCCB blue */
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-left: 10px;
+}
+
+/* Remove hover effect for the logout button and set color to black */
+.navbar-nav-right .btn:hover {
+    background-color: #0052A5;  /* Keep the same background color */
+    color: #000 !important;  /* Set text color to black */
+}
+
+/* Prevent content from being overlapped by the navbar */
+body {
+    padding-top: 90px; /* Adjust this based on the height of your navbar */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 8px 0;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav-center .nav-link {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .navbar-logo {
+        width: 45px; /* Slightly smaller logo on small screens */
+    }
+}

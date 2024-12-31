@@ -1,0 +1,131 @@
+.manage-admins-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.manage-admins-container h2 {
+    text-align: center;
+    color: #0052A5;
+    margin-bottom: 20px;
+}
+
+.admin-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: end;
+}
+
+.admin-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.admin-form input, .admin-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-form button.add-btn {
+    padding: 10px 20px;
+    background-color: #0052A5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.admin-form button.add-btn:hover {
+    background-color: #003f82;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.admin-list {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.admin-list h3 {
+    color: #0052A5;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #0052A5;
+    color: white;
+}
+
+.admin-table td button.deletee-btn {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-table td button.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.admin-table td select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-table td button.update-btn {
+    padding: 5px 10px;
+    background-color: #003f82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-table td button.update-btn:hover {
+    background-color: #0052A5;
+}
+
+.no-admins-message {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+}

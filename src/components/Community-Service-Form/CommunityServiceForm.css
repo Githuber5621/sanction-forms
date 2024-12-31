@@ -1,0 +1,91 @@
+/* Community Service Form container */
+.community-service-form-container {
+    height: 90.5vh; /* Ensure it takes the full screen height */
+    overflow-y: auto; /* Scroll if content exceeds available height */
+    padding: 10px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align items in the center of the container */
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+
+/* Form styling for Community Service */
+.community-service-form-container .custom-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0052A5;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-height: calc(100vh - 100px); /* Adjust for extra spacing */
+    margin: 0 auto;
+    overflow-y: auto; /* Allow scrolling within form if it grows too tall */
+}
+
+/* Custom Input field styling */
+.community-service-form-container .custom-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0052A5;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+
+/* Button styling */
+.community-service-form-container button {
+    background-color: #0052A5; /* LCCB blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.community-service-form-container button:hover {
+    background-color: #009cff; /* Consistent hover color for all buttons */
+}
+
+/* Layout for buttons next to each other */
+.community-service-form-container .button-group {
+    display: flex; /* Flexbox layout for buttons */
+    justify-content: space-between; /* Distribute buttons with space between */
+    gap: 10px; /* Add space between buttons */
+    width: 100%; /* Make the group take the full width */
+    margin-top: 20px; /* Add space above the buttons */
+}
+
+/* Button size adjustments within button group */
+.community-service-form-container .button-group button {
+    width: 48%; /* Set buttons to take 48% width of the container */
+    padding: 10px 20px;
+    font-size: 1.1rem; /* Adjust button font size */
+}
+
+/* Styling for Link inside button */
+.community-service-form-container .clear-tasks-btn-link {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensure it behaves like a block element inside the button */
+    width: 100%; /* Make the link take the full width of the button */
+    text-align: center; /* Center the text */
+}
+
+/* Remove the hover effect for the link, apply same hover style as submit button */
+.community-service-form-container .clear-tasks-btn-link:hover {
+    background-color: #009cff; /* Same hover background as the Submit button */
+    color: white; /* Keep text color white */
+}

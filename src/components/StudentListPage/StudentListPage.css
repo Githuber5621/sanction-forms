@@ -1,0 +1,226 @@
+/* Layout Container */
+.student-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Left Section */
+.student-list-section {
+    flex: 2;
+    max-width: 60%;
+}
+
+/* Right Section */
+.student-dashboard-section {
+    flex: 1;
+    max-width: 35%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.student-dashboard-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0052A5;
+}
+
+.student-dashboard-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.student-dashboard-section li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* Titles and Buttons */
+.student-list-page h2 {
+    text-align: center;
+    color: #0052A5;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.student-list-page .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Warning Button (Edit) */
+.btn-warning {
+    background-color: #0052A5; /* Primary Blue */
+    color: white;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #009cff; /* Hover Blue */
+    color: white;
+}
+
+.student-list-page .btn-success {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.student-list-page .btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.student-list-page .btn-warning {
+    background-color: #0052A5;
+    color: white;
+}
+
+.student-list-page .btn-warning:hover {
+    background-color: #009cff;
+    transform: scale(1.05);
+}
+
+.student-list-page .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.student-list-page .btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+.student-list-page .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.student-list-page .table th, 
+.student-list-page .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.student-list-page .table th {
+    background-color: #0052A5;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.student-list-page .table td {
+    font-size: 14px;
+    color: #333;
+}
+
+.student-list-page .table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Profile Image Styling */
+.student-list-page .profile-img {
+    width: 30px; /* Adjusted size */
+    height: 30px; /* Adjusted size */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    width: 50px;  /* Adjust size as necessary */
+    height: 50px; /* Keep it square */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+    border-radius: 50%; /* Optional: Makes the image circular */
+}
+
+/* Button Specific Styles */
+.student-list-page .edit-btn {
+    background-color: #0052A5;
+    color: white;
+}
+
+.student-list-page .edit-btn:hover {
+    background-color: #009cff;
+    transform: scale(1.05);
+}
+
+.student-list-page .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn {
+    width: 40%;
+}
+
+.student-list-page .delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Filter Section Styles */
+.filter-section {
+    display: flex;          /* Use flexbox for horizontal layout */
+    align-items: center;    /* Center items vertically */
+    gap: 15px;              /* Space between the select boxes */
+    margin-bottom: 20px;    /* Optional: Add some space below the filter section */
+}
+
+/* Additional styles for select boxes, if needed */
+.filter-section select {
+    padding: 5px;           /* Add some padding for better appearance */
+    font-size: 14px;        /* Adjust font size */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px;     /* Rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-list-container {
+        flex-direction: column;
+    }
+
+    .student-list-section,
+    .student-dashboard-section {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .student-list-page h2 {
+        font-size: 20px;
+    }
+
+    .student-list-page .table th, 
+    .student-list-page .table td {
+        font-size: 12px;
+    }
+
+    .student-list-page .btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}

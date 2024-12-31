@@ -1,0 +1,96 @@
+/* Scoped styles for StudentProfileForm */
+.student-profile-form-container {
+    height: 100vh; /* Set to full viewport height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    padding: 10px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+/* Scoped form styling */
+.student-profile-form-container .custom-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0052A5;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-height: 90vh; /* Set to 90% of the viewport height */
+    margin: 0 auto;
+    overflow-y: auto; /* Enable scroll within the form if necessary */
+}
+
+/* Scoped input field styling */
+.student-profile-form-container .custom-form .custom-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0052A5;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+/* Scoped button styling */
+.student-profile-form-container button.submit-btn {
+    background-color: #0052A5;
+    color: white;
+    padding: 12px 25px; /* Slightly larger padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Larger font size */
+    width: 100%;
+    max-width: 200px; /* Restrict the button width for better alignment */
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space the button from the rest of the form */
+}
+
+/* Hover effect for the button */
+.student-profile-form-container button.submit-btn:hover {
+    background-color: #009cff;
+}
+
+/* Scoped error message styling */
+.student-profile-form-container .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Input label styling */
+.student-profile-form-container label {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Profile picture input */
+.student-profile-form-container .custom-form input[type="file"] {
+    padding: 5px;
+    margin: 10px 0;
+    border: 2px solid #0052A5;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .student-profile-form-container .custom-form {
+        width: 90%; /* Ensure form takes up more space on smaller screens */
+    }
+
+    .student-profile-form-container button.submit-btn {
+        width: 100%; /* Make the submit button full-width on smaller screens */
+    }
+}

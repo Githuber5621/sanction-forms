@@ -1,0 +1,149 @@
+/* Overall layout and background for the home container */
+.home-container {
+  display: flex;
+  justify-content: space-between; /* Space between main content and report table */
+  align-items: flex-start; /* Align content to the top */
+  min-height: 100vh; /* Ensure container stretches the viewport height */
+  background-image: url('../../assets/LCCB.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  overflow-y: auto; /* Ensure vertical scrolling on smaller screens */
+}
+
+/* Styling for the pie chart container */
+.pie-chart-container {
+  flex: 2; /* Occupy 2/3 of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%; /* Slightly increased for better chart visibility */
+  background-color: rgba(0, 0, 0, 0.6); /* Increased opacity for better readability */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); /* Add a subtle blur effect */
+}
+
+/* Logo container styling */
+.logo-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Logo styling */
+.lccb-logo {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Welcome message styling */
+.welcome-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.welcome-message h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-message p {
+  color: #f0f0f0;
+  font-size: 1rem;
+  margin-top: -5px;
+  margin-bottom: 25px;
+}
+
+/* Report table container styling */
+.report-table {
+  flex: 1; /* Occupy 1/3 of the space */
+  margin-left: 20px; /* Space between chart and table */
+  max-width: 40%; /* Limit table width */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.report-table h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Table styling */
+.report-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-table th,
+.report-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  text-align: center;
+}
+
+.report-table th {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.report-table td {
+  color: #818181;
+}
+
+
+/* Highlight rows consistently */
+.report-table tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.report-table tr:nth-child(odd) td {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.student-dashboard{
+  width: 15%;
+  color: #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align all items */
+    padding: 15px;
+  }
+
+  .pie-chart-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .report-table {
+    max-width: 100%;
+    margin-left: 0; /* Remove spacing on smaller screens */
+  }
+}
+
+/* Add transition for smoother resizing */
+.pie-chart-container,
+.report-table {
+  transition: all 0.3s ease;
+}

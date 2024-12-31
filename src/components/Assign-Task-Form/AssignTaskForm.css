@@ -1,0 +1,194 @@
+/* Scoped styles for AssignTaskForm */
+.assign-task-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Set to full viewport height */
+    overflow-y: auto; /* Enable scrolling for the entire page */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Scrollable form that takes up remaining space */
+.assign-task-container .scrollable-form {
+    flex: 1; /* Allow the form to take up remaining space */
+    padding: 10px;
+    margin-bottom: 20px; /* Add space at the bottom */
+    overflow-y: auto; /* Enable internal scrolling */
+    max-height: calc(100vh - 30px); /* Adjust height to fit within the viewport */
+}
+
+/* Styling for form labels */
+.assign-task-container label {
+    color: #0052A5;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    width: 100%; /* Ensure the label takes the full width */
+    box-sizing: border-box;
+}
+
+/* Input field styles */
+.assign-task-container input[type="text"],
+.assign-task-container input[type="number"],
+.assign-task-container input[type="date"],
+.assign-task-container input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #0052A5;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Button styles */
+.assign-task-container button {
+    background-color: #0052A5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.assign-task-container button:hover {
+    background-color: #ffd700;
+}
+
+/* Styling for Save Task and Cancel buttons */
+.assign-task-container .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.assign-task-container .submit-btn {
+    background-color: #0052A5;
+    color: white;
+    padding: 8px 16px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.assign-task-container .submit-btn:hover {
+    background-color: #009cff;
+}
+
+.assign-task-container .cancel-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 16px; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.assign-task-container .cancel-btn:hover {
+    background-color: #ff3333;
+}
+
+/* Styling for Task Table */
+.assign-task-container .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.assign-task-container .task-table th,
+.assign-task-container .task-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.assign-task-container .task-table th {
+    background-color: #0052A5;
+    color: white;
+}
+
+.assign-task-container .task-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.assign-task-container .task-table tr:hover {
+    background-color: #e1f3ff;
+}
+
+/* Button styling inside table */
+.assign-task-container .task-table td.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.assign-task-container .task-table td button {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 80px;
+}
+
+.assign-task-container .task-table td button:first-child {
+    background-color: #0052A5;
+    color: white;
+}
+
+.assign-task-container .task-table td button:last-child {
+    background-color: #DC3545;
+    color: white;
+}
+
+.assign-task-container .task-table td button:hover {
+    background-color: #009cff;
+}
+
+.assign-task-container .task-table td button.delete-btn:hover {
+    background-color: #ff3333;
+}
+
+/* Add Task and Save Task Buttons */
+.assign-task-container .add-task-btn,
+.assign-task-container .submit-btn {
+    background-color: #0052A5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;  /* Full width to match the input fields */
+}
+
+.assign-task-container .add-task-btn:hover,
+.assign-task-container .save-task-btn:hover {
+    background-color: #009cff;
+}
+
+.filter-sort-container {
+    display: flex;
+    gap: 20px; /* Space between sort and filter boxes */
+    margin-bottom: 20px; /* Space below the container */
+    align-items: center; /* Center items vertically */
+}
+
+.sort-container,
+.filter-container {
+    display: flex;
+    align-items: center; /* Center label and select vertically */
+}
+
+.sort-container label,
+.filter-container label {
+    margin-right: 8px; /* Space between label and select */
+    color: #0052A5; /* Match existing label color */
+    font-weight: bold; /* Match existing label font weight */
+}

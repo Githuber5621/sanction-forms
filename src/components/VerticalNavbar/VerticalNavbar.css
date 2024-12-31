@@ -1,0 +1,102 @@
+/* Container for the vertical navbar */
+.vertical-navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height for the sidebar */
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #0052A5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 900;
+}
+
+/* Sidebar content styling */
+.vertical-sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding-right: 10px; /* Adjust padding to match the width */
+}
+
+/* Logo styling */
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Admin name styling */
+.admin-name {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* Sidebar navigation styles */
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.sidebar-nav li a:hover {
+    background-color: #009cff; /* Add background on hover */
+    transform: translateX(5px); /* Move slightly to the right on hover */
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 190px; /* Sidebar width to align content */
+    height: 100vh; /* Full screen height */
+    overflow-y: auto; /* Allow scrolling within main content */
+    padding: 20px; /* Padding for content */
+}
+
+/* Styling for the logout button container */
+.logout-btn-container {
+    margin-top: auto; /* Push the button to the bottom of the sidebar */
+    padding: 10px;
+    width: 100%;
+}
+
+/* Styling for the logout button */
+.logout-btn {
+    margin-bottom: 350px;
+    background-color: #0055de; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make it stretch across the sidebar */
+}
+
+.logout-btn:hover {
+    background-color: #009cff; /* Darker red on hover */
+}

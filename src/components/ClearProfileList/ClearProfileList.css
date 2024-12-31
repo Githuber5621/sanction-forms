@@ -1,0 +1,54 @@
+/* Container for the table and button */
+.container {
+    padding: 20px;
+    background-color: #f4f4f9; /* Light background color */
+    border-radius: 8px;
+    max-width: 80%; /* Set a max-width for the container */
+    margin: 0 auto; /* Center align the container */
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #0052A5; /* LCCB blue */
+    color: white;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+/* Button container styling */
+.clear-profiles-btn-container {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 20px; /* Add space above the button */
+}
+
+/* Button styling */
+.btn-danger {
+    background-color: #dc3545; /* Red for danger */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red for hover */
+}
